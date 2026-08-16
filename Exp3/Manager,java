@@ -1,0 +1,16 @@
+public class Manager extends Employee {
+    private String department;
+    private int no_of_project_completed;
+
+    Manager(String name, String gender, int age, String number, String role, double salary, String id, int experince, String departmen,int project){
+        super(name, gender, age, number, role, salary, id, experince);
+        this.department = departmen;
+        this.no_of_project_completed=project;
+    }
+
+    void display(){
+        super.display();
+        System.out.println("Department: "+department);
+        System.out.println("Number of project completed: "+no_of_project_completed);
+    }
+}
