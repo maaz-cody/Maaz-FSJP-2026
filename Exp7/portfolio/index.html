@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaz Ismail Sayyed - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Maaz.dev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero / Home Section -->
+    <header id="home">
+        <div class="hero-content">
+            <div class="profile-pic-container">
+                <img src="maaz.jpeg" alt="Maaz Ismail Sayyed" class="profile-img">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Maaz Ismail Sayyed</span></h1>
+            <p class="subtitle">Computer Engineering Student & Aspiring Developer</p>
+            <div class="badge-container">
+                <span class="badge">Dept: Computer Engineering</span>
+                <span class="badge">Branch: Comps (A)</span>
+                <span class="badge">UIN/Roll No: 251P139/67</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Hello! I am an undergraduate Computer Engineering student at Rizvi College of Engineering[cite: 1] with a deep passion for software development, logical problem-solving, and building practical applications. I enjoy building computational tools, exploring low-level logic, and expanding my web development skills to create user-friendly digital experiences.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="card">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">C Language</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">HTML5 (Beginner)</div>
+                <div class="skill-item">CSS3 (Beginner)</div>
+                <div class="skill-item">JavaScript (Beginner)</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Quadratic Equation Solver</h3>
+                    <p>A functional computational tool built to calculate roots, discriminants, and equation properties instantly.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Quadratic Equation Maker</h3>
+                    <p>An interactive utility designed to generate and construct quadratic equations dynamically from given roots.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Calculator</h3>
+                    <p>A customized calculation program built to handle standard arithmetic operations with smooth execution logic.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form id="contactForm" onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <p id="successMessage" class="success-msg"></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Maaz Ismail Sayyed. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
